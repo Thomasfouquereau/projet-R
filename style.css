@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: "K2D", sans-serif;
+    background-color: #060d0f;
+    background-image: url(./addon/bg-header.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5vw 2.3vw;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: fixed;
+    width: 40vw;
+    height: 6vh;
+    z-index: 1000;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 0 0 10px 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 9vw;
+}
+
+.nav-container_link {
+    font-size: 1vw;
+    font-weight: 700;
+    list-style: none;
+    text-transform: capitalize;
+}
+
+.nav-container_link a {
+    transition: all 0.3s ease;
+}
+
+.nav-container_link a:hover {
+    color: #00BBF9;
+}
+
+.logo {
+    width: 8vw;
+    position: sticky ;
+    top: 0.3vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 8vw;
+    z-index: 1001;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    height: 23vw;
+    width: 40vw;
+    border-radius: 1.6vw;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7vw;
+    
+}
+
+.header-header_container {
+    display: flex;
+    flex-direction: column;
+    height: 13vw;
+    border-radius: 1.6vw 1.6vw 0 0;
+}
+
+.header_title,
+.header_p {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.header_title {
+    font-size: 1.8vw;
+    font-weight: 700;
+    margin-top: 1vw;
+}
+
+.header_p {
+    font-size: 0.8vw;
+    font-weight: 400;
+    margin-top: 0.8vw;
+}
+
+.header-info_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vw;
+    border-radius: 0 0 1.6vw 1.6vw;
+    background-color: #00BBF9;
+    background-image: linear-gradient(19deg, #00BBF9 0%, #B721FF 100%);
+}
+
+.header_button,
+.header_drawing {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+}
+
+.header_button {
+    width: 13vw;
+    height: 2.4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5vw;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-size: 1vw;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header_button:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #00BBF9;
+}
+
+.header_drawing {
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-scroll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 7vw;
+}
+
+.header-scroll_text{
+    font-size: 1.3vw;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1vw;
+}
+
+.header-scroll_icon{
+    width: 2vw;
+    height: 2vw;
+    margin-left: 0.5vw;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+}
+
+.team-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 14vw;
+    margin-right: 14vw;
+    background-color: #00BBF9;
+    padding: 1vw 2vw;
+    border-radius: 1vw;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    margin-top: 10vw;
+    margin-bottom: 5vw;
+}
+
+.team-info_title{
+    font-size: 1.8vw;
+    font-weight: 700;
+    margin-bottom: 1vw;
+}
+
+.team-info_text{
+    font-size: 0.9vw;
+    font-weight: 300;
+    margin-bottom: 1vw;
+}
+
+.team-members{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2vw;
+}
+
+.team-members::after{
+    content: "";
+    position: absolute;
+    width: 0.4vw;
+    border-radius: 40%;
+    height: 100%;
+    background-color: #00BBF9;
+}
+
+.team-member-card-left,.team-member-card-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 1.6vw;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.team-member-card-left img,.team-member-card-right img {
+    width: 13vw;
+    height: 11vw;
+    border-radius: 2vw;
+    object-fit: cover;
+}
+
+.team-member-card-left h3,.team-member-card-right h3{
+    font-size: 1.5vw;
+    font-weight: 700;
+    margin-top: 1vw;
+}
+
+.team-member-card-left p,.team-member-card-right p {
+    font-size: 1vw;
+    font-weight: 300;
+    margin-top: 1vw;
+}
+.team-member-card-left{
+    transform: translateX(-15vw);
+    
+}
+
+.team-member-card-right{
+    transform: translateX(15vw);
+}
+
+.drawing1{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 4vw;
+    right: 30vw;
+    z-index: -1;
+}
+
+.drawing2{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 55vw;
+    left: 45%;
+    rotate: 90deg;
+    z-index: -1;
+}
+
+.drawing3{
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    bottom: 5vw;
+    left: 30vw;
+    z-index: -1;
+}
+
+.footer {
+    background-color: #060809;
+    padding: 4vw 0;
+    text-align: center;
+    margin-top: 10vw;
+}
+
+.footer-info {
+    margin-bottom: 20px;
+}
+
+.footer-info_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-info_text {
+    font-size: 16px;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-contact_info {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.footer-contact_info h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#player{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -60%);
+}

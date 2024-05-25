@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./addon/logo de caca fav.svg">
+    <title>Projet R</title>
+</head>
+
+<body id="1">
+    <nav>
+        <div class="nav">
+            <ul class="nav-container">
+                <li class="nav-container_link"><a
+                        href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">Accueil</a></li>
+                <li class="nav-container_link"><a
+                        href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">Nos offre</a></li>
+            </ul>
+            <ul class="nav-container">
+                <li class="nav-container_link"><a
+                        href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">Projet</a></li>
+                <li class="nav-container_link"><a
+                        href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <img class="logo" src="./addon/logo de caca.svg">
+    <main>
+        <div>
+            <div id="player">
+                <video autoplay>
+                    <source src="./addon/Rick Astley - Never Gonna Give You Up (Official Music Video).mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </main>
+    <script>
+        const clique = document.getElementById('1');
+        clique.addEventListener('click', function () {
+            toggleFullScreen();
+        });
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                alert('Tu as été rick roll');
+                setInterval(() => {
+                    alert('Tu as été rick roll');
+                }, 600);
+            }
+        }
+    </script>
+</body>
+
+</html>
